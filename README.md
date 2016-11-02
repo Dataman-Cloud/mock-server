@@ -1,10 +1,10 @@
 # mock-server
-mock-server is a handy mock server tool for REST API service dependency in unit testing.
-It sets up a real server with custom registerd routers.
-User is able to customize different response status code and body as they want.
-This is very useful for unit testing.
-User can return different response status codes and bodies as needed to improve testing coverage.
-For further usage, please refer to source code: [server.go](https://github.com/Dataman-Cloud/mock-server/blob/master/server/server.go)
+mock-server is a handy mock server tool for REST API service dependency in unit testing.  
+It sets up a real server with custom registerd routers.  
+User is able to customize different response status code and body as they want.  
+This is very useful for unit testing.  
+User can return different response status codes and bodies as needed to improve testing coverage.  
+For further usage, please refer to source code: [server.go](https://github.com/Dataman-Cloud/mock-server/blob/master/server/server.go)  
 
 ## Features
 1. It supports multiple data format(string, interface, file, io.Reader) when register custom request body and response body.
@@ -48,5 +48,7 @@ router1.RGroup().
 router1.RGroup().
 	RQuery("filters={}")
         Reply(400)
+
+//this line of code is needed after add router,otherwise mock server does not work.
 mockServer.Register()
 ```
