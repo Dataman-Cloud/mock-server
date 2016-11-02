@@ -12,7 +12,7 @@ For further usage, please refer to source code: [server.go](https://github.com/D
 3. It supports one request url with different response codes and bodies based on request query and request url. 
 
 ## Installation
-Once you have installed Go, run these commands to install the mock-server package:
+Once you have (installed Go)[https://golang.org/doc/install#releases], run these commands to install the mock-server package:
 ```
 go get github.com/Dataman-Cloud/mock-server/server
 ```
